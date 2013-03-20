@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="apple-itunes-app" content="app-id=456870760">
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Sean M Everett | Contact </title>
+
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- Header and Nav -->
+
+  <nav class="top-bar fixed">
+    <ul>
+      <!-- Title Area -->
+      <li class="name">
+          <a href="../">Home</a>
+      </li>
+      <li class="toggle-topbar"><a href="#"></a></li>
+    </ul>
+
+    <section>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a class="active" href="#">Story</a>
+          <ul class="dropdown">
+            <li><a href="../decipher.html" class ="">Decipher</a></li>
+            <li><a href="../journey.html" class ="">Journey</a></li>
+            <li><a href="../contact.html" class="">Contact</a></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown">
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../techspecs.html">Tech Specs</a></li>
+          </ul>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">Thinking</a>
+          <ul class="dropdown">
+            <li><label>Insights</label></li>
+            <li><a href="../seanversations.html">Seanversations</a></li>
+            <li><label>Social</label></li>
+            <li><a href="http://twitter.com/seanmeverett">Twitter</a></li>
+            <li><a href="http://seanmeverett.tumblr.com">Blog</a></li>
+            <li><a href="http://dribbble.com/seanmeverett">Dribbble</a></li>
+            <li><a href="http://www.quora.com/Sean-Everett">Quora</a></li>
+          </ul>
+        <li class="divider"></li>
+      </ul>
+    </section>
+  </nav>
+
+
+  <!-- End Header and Nav -->
+
+  <img src="images/contactbanner.jpg" width="100%"/>
+  <div class="row">
+    <div class="twelve columns">
+    	<img src="images/shadowdivider.png"/>
+    </div>
+  </div>
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+
+    <!-- Contact Details -->
+    <div class="nine columns">
+
+      <h3><span>Accepting Transmissions</span></h3>
+      <p>Whether from your phone, computer, or interstellar space, I'm always around to lend a helping hand. My parents taught me to listen first, help second, and worry about myself third. So don't be shy, talking with passionate people makes my day.</p>
+
+      <div class="panel radius">
+      	<form action="mail.php" method="post">
+          <div class="row collapse">
+            <div class="two columns"><label class="inline">Your Name</label></div>
+            <div class="ten columns"><input type="text" name="name" placeholder="Name" /></div>
+          </div>
+          <div class="row collapse">
+            <div class="two columns"><label class="inline">Your Email</label></div>
+            <div class="ten columns"><input type="text" name="email" placeholder="name@email.com" /></div>
+          </div>
+
+          <label>Your Message</label>
+          <textarea name="message" rows="4"></textarea>
+
+          <button type="submit" value="Send it!" class="radius button">Submit</button>
+      	</form>
+      </div>
+    </div>
+
+    <!-- End Contact Details -->
+
+
+    <!-- Sidebar -->
+
+    <div class="three columns">
+	    <div class="panel radius">
+		    <h5>Tell Me Your Story</h5>
+
+		    <!-- Clicking this placeholder fires the mapModal Reveal modal -->
+		    <p>
+        		<a href="" data-reveal-id="mapModal"><img src="images/yourjourney.jpg" /></a><br />
+        	</p>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+  
+  <!-- End Grid Section -->
+    
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="twelve columns">
+      <img src="images/shadowdivider.png"/>
+    </div>
+  </footer> 
+
+  <div class="row">
+  	<div class="three columns centered">
+    	<a href="../portfolio.html" class="radius button right">View Portfolio</a>
+    </div>
+  </div>
+  </br>
+
+
+  <!-- Map Modal -->
+
+  <div class="reveal-modal" id="mapModal">
+    <h4>I'm Listening</h4>
+    <p><img src="images/satellite.jpg" /></p>
+    <p>
+        Direct contact:<br />
+        <a href="http://twitter.com/seanmeverett">@SeanMEverett</a><br />
+        <a href="mailto:seanmeverett@gmail.com">SeanMEverett[at]gmail[dot]com</a>
+      </p>
+
+    <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
+    <a href="#" class="close-reveal-modal">&times;</a>
+  </div>
+
+  <!-- End Modal -->
+
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12151040-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
