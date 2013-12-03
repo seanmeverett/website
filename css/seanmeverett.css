@@ -60,7 +60,6 @@ a:hover {
   background-repeat: none;
   background-position: center center;
   border-bottom: 1px solid #009b77;
-  height: 800px;
 }
 .status-bar {
   padding: 10px;
@@ -68,6 +67,14 @@ a:hover {
   text-shadow: none;
   background-color: #000000;
   height: 50px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+.hero {
+  padding-top: 90px;
+  padding-bottom: 40px;
 }
 .panel {
   background-color: transparent;
