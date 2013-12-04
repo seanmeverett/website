@@ -13,7 +13,6 @@ body {
      font-weight: normal;
      font-style: normal;
 }
-
 @font-face {
   font-family: 'Avenir-Black';
   src: url('fonts/avenirblack.eot');
@@ -54,8 +53,12 @@ a:hover {
 }
 .background {
   background-image: url("../img/bg.jpg");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   border-bottom: 1px solid #009b77;
 }
 .status-bar {
