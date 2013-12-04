@@ -27,11 +27,8 @@ body {
 .heavy {
   font-family: 'Avenir-Black', sans-serif;
 }
-.white {
-  color: #ffffff;
-}
-.black {
-  color: #000000;
+.tiny {
+  font-size: 8px;
 }
 h1,
 h2,
@@ -66,7 +63,7 @@ a:hover {
   color: #ffffff;
   text-shadow: none;
   background-color: #000000;
-  height: 50px;
+  height: 70px;
   position: fixed;
   right: 0;
   left: 0;
