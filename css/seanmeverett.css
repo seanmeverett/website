@@ -100,9 +100,9 @@ a:hover {
   border-color: #ffffff;
 }
 .pulse {
-  -webkit-animation: pulse 4500ms linear;
-  -moz-animation: pulse 4500ms linear;
-  animation: pulse 4500ms linear;
+  -webkit-animation: pulse 4000ms linear;
+  -moz-animation: pulse 4000ms linear;
+  animation: pulse 4000ms linear;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
