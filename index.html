@@ -23,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body>
+    <body onload="updateClock(); setInterval('updateClock()', 1000 )">
     <div class="background">
 
      <!-- STATUS BAR
@@ -34,7 +34,7 @@
             <span class="tiny"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i></span> <span class="small">AT&T</span>
           </div>
           <div class="col-xs-4 text-center">
-            <span class="small">10:10 AM</span>
+            <span id="clock" class="small">&nbsp;</span>
           </div>
           <div class="col-xs-4 text-right">
             <span class="small"><i class="fa fa-location-arrow"></i> &nbsp 97%</span>
@@ -597,5 +597,6 @@
     ================================================== -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>
