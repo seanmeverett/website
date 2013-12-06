@@ -1,1 +1,0 @@
-ruby /Users/foo/yourpath/app_annie_status_board_downloads.rb
