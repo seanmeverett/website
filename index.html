@@ -38,8 +38,24 @@
             </div>
         </div>
         
+        <div class="row center">
+            <div class="col-md-12">
+                <div id="wheelDiv"></div>
+                <div id='piemenu' data-wheelnav data-wheelnav-slicepath='DonutSlice' data-wheelnav-spreader data-wheelnav-spreaderpath='PieSpreader' data-wheelnav-rotateoff data-wheelnav-navangle='0' data-wheelnav-titleheight='30' data-wheelnav-cssmode data-wheelnav-init>
+                  <div data-wheelnav-navitemicon='check' onmouseup='alert("Place your logic here.");'></div>
+                  <div data-wheelnav-navitemimg='http://pmg.softwaretailoring.net/img/pmg_favicon.png' onmouseup='alert("Place your logic here.");'></div>
+                  <div data-wheelnav-navitemicon='checkbox' onmouseup='alert("Place your logic here.");'></div>
+                  <div data-wheelnav-navitemicon='checked' onmouseup='alert("Place your logic here.");'></div>
+                  <div data-wheelnav-navitemicon='star' onmouseup='alert("Place your logic here.");'></div>
+                  <div data-wheelnav-navitemicon='icons' onmouseup='alert("Place your logic here.");'></div>
+                  <div data-wheelnav-navitemicon='download' onmouseup='alert("Place your logic here.");'></div>
+                  <div data-wheelnav-navitemicon='smile' onmouseup='alert("Place your logic here.");'></div>
+                </div>
+            </div>
+        </div>
+        
 
-        <!-- FOOTER
+    <!-- FOOTER
     ================================================== -->
     <div class="container">
       <div class="footer">
@@ -80,7 +96,7 @@
 
 
 
-    <!-- JAVASCRIPT
+    <!-- STANDARD JAVASCRIPT
     ============================================================================ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -88,6 +104,33 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <!-- retina images for hi-rez devices -->
     <script type="text/javascript" src="js/retina.min.js"></script>
+    <script type="text/javascript" src="js/wheelnav.min.js"></script>
+    <script type="text/javascript" src="js/raphael.min.js"></script>
+    <script type="text/javascript" src="js/raphael.icons.min.js"></script>
+        
+    <!-- WHEEL NAV
+    ============================================================================ -->
+    <script type="text/javascript">
+        window.onload = function () {
+            var wheel = new wheelnav("wheelDiv");
+
+            //This is the place for code snippets from the documentation -> http://wheelnavjs.softwaretailoring.net/documentation.html
+
+            wheel.createWheel(["Thank you", "for", "download", icon.fave]);
+            wheel.navigateWheel(2);
+
+            var piemenu = new wheelnav('piemenu');
+                piemenu.spreaderInTitle = icon.plus;
+                piemenu.spreaderOutTitle = icon.cross;
+                piemenu.spreaderRadius = piemenu.wheelRadius * 0.34;
+                piemenu.wheelRadius = piemenu.wheelRadius * 0.83;
+                piemenu.createWheel();
+                piemenu.setTooltips(['check','image','checkbox','checked','star','icons','download','smile']);
+                //http://pmg.softwaretailoring.net
+        };
+
+    </script>
+        
     
     <!-- GOOGLE ANALYTICS
     ============================================================================ -->
